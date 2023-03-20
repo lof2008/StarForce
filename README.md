@@ -1,8 +1,8 @@
 ﻿## HOMEPAGE
 
-- **English** - Coming soon.
-- **简体中文** - [https://gameframework.cn/](https://gameframework.cn/)
-  - **QQ 讨论群** 216332935
+-这个是Ellan Jiang的GameFramework的项目，这个版本是把GameFramework也集成到UnityUnityGameFramework中，方便看源码和添加类图关系
+
+- **简体中文** - [https://gameframework.cn/](https://gameframework.cn/) 
 
 ---
 
