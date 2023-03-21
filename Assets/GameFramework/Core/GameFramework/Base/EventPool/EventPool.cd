@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="事件池，可以理解为事件中心，由于是泛型，可以提供多种事件中心机制，分别处理不同类型事件，也是一种封装，一般游戏只有一个事件中心，这里就可以有多个事件中心处理程序以应对不同的需求，提供订阅和触发机制进行解耦，支持多种行为模式：&#xD;&#xA;没有回调，一个回调，多个回调，重复回调&#xD;&#xA;&#xD;&#xA;该游戏里就用到两种类型事件池：&#xD;&#xA;EventPool&lt;Packet&gt;：网络频道基类内部用&#xD;&#xA;EventPool&lt;GameEventArgs&gt;：大多数游戏逻辑使用&#xD;&#xA;">
+    <Position X="4.115" Y="1.229" Height="1.844" Width="4.2" />
+  </Comment>
+  <Class Name="GameFramework.EventPool&lt;T&gt;">
+    <Position X="5.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgCAAAAAACAACAUAUSAAAAmAAAAQCAAAABAACQ=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\EventPool\EventPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.EventPool&lt;T&gt;">
+    <Position X="2.5" Y="3.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.EventPool&lt;T&gt;.Event">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\EventPool\EventPool.Event.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\EventPool\EventPool.Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.BaseEventArgs">
+    <Position X="8.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\EventPool\BaseEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GameFramework.EventPoolMode">
+    <Position X="8.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAIAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\EventPool\EventPoolMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

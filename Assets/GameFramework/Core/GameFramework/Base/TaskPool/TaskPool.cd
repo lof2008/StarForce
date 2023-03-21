@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="TaskInfo查询任务信息使用">
+    <Position X="1.096" Y="3.062" Height="0.284" Width="1.818" />
+  </Comment>
+  <Comment CommentText="TaskBase任务基类，被ReferencePool管理">
+    <Position X="5.449" Y="2.732" Height="0.551" Width="1.628" />
+  </Comment>
+  <Comment CommentText="TaskPool管理任务和任务代理的添加、移除，&#xD;&#xA;具体任务的执行还是由任务代理来执行&#xD;&#xA;泛型给它提供了多种类型的能力&#xD;&#xA;该游戏共用了3中任务池：&#xD;&#xA;1.TaskPool&lt;DownloadTask&gt;&#xD;&#xA;2.TaskPool&lt;LoadResourceTaskBase&gt;&#xD;&#xA;3.TaskPool&lt;WebRequestTask&gt;">
+    <Position X="7.574" Y="1.976" Height="1.384" Width="2.977" />
+  </Comment>
+  <Comment CommentText="ITaskAgent接口的实现类是任务执行的地方，&#xD;&#xA;任务的初始化，开始，更新，关闭，重置">
+    <Position X="11.207" Y="2.493" Height="0.94" Width="1.628" />
+  </Comment>
+  <Class Name="GameFramework.TaskBase">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAAAAIAAgAUAEAAAAAAAQAABAAAAAAAAAAABICBA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\TaskPool\TaskBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.TaskPool&lt;T&gt;">
+    <Position X="7.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEQgDCCSAAIAAEAAEIQAAQAAAAgIAABgAAAAAIAAgAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\TaskPool\TaskPool.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ITaskAgent" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="GameFramework.TaskInfo">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIABAAAEAgAgAAAEAAgAAAAQAABAAAAAAAAAAABICBA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\TaskPool\TaskInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="GameFramework.ITaskAgent&lt;T&gt;">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAABQAAAAAAAQAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\TaskPool\ITaskAgent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GameFramework.StartTaskStatus">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAEAAAAAgAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\TaskPool\StartTaskStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GameFramework.TaskStatus">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\TaskPool\TaskStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

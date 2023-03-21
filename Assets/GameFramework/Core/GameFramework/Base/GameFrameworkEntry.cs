@@ -17,6 +17,22 @@ namespace GameFramework
     {
         private static readonly GameFrameworkLinkedList<GameFrameworkModule> s_GameFrameworkModules = new GameFrameworkLinkedList<GameFrameworkModule>();
 
+        internal static GameFrameworkModule GameFrameworkModule
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public static GameFrameworkLinkedList<object> GameFrameworkLinkedList
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// 所有游戏框架模块轮询。
         /// </summary>

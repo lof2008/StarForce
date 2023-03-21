@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="DataProvider&lt;T&gt;内部使用IResourceManager和IDataProviderHelper&lt;T&gt;来读取数据，&#xD;&#xA;并抛出事件，不同资源类型用不同的方式读取：&#xD;&#xA;1.AssetOnDisk、AssetOnFileSystem、BinaryOnDisk使用IResourceManager来读取，内部引发事件&#xD;&#xA;2.BinaryOnFileSystem使用IDataProviderHelper（IResourceManager处理不了的）来读取（自定义读取），引发事件&#xD;&#xA;&#xD;&#xA;事件参数类实例的创建通过ReferencePool&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+    <Position X="4.242" Y="0.906" Height="1.326" Width="7.313" />
+  </Comment>
+  <Class Name="GameFramework.DataProvider&lt;T&gt;">
+    <Position X="7" Y="3.75" Width="3.75" />
+    <Members>
+      <Property Name="IDataProviderHelper" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACCGACIAAABAAEAAwRCICEAIAhAAgAQgAQFECCAAQI=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\DataProvider.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IDataProviderHelper" />
+      <Property Name="IDataProviderHelper1" />
+      <Property Name="IResourceManager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.548" />
+  </Class>
+  <Class Name="GameFramework.ReadDataUpdateEventArgs" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAADIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\ReadDataUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.DataProviderCreator">
+    <Position X="12.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\DataProviderCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.ReadDataDependencyAssetEventArgs" Collapsed="true">
+    <Position X="0.75" Y="7" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAAAAAABAAAAAAAEAAAAAAAgBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\ReadDataDependencyAssetEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.ReadDataFailureEventArgs" Collapsed="true">
+    <Position X="0.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\ReadDataFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.ReadDataSuccessEventArgs" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAAAAAAAAAAAAAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\ReadDataSuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.IDataProvider&lt;T&gt;">
+    <Position X="4.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAABAAEAAQAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\IDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.IDataProviderHelper&lt;T&gt;" Collapsed="true">
+    <Position X="12.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\IDataProviderHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Resource.IResourceManager" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AhMgJkc9CAmAOAUgGBAIiQhACBAHVF2AEJIEo2ARIgg=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Resource\IResourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

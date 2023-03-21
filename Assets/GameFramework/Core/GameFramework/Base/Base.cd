@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="GameFrameworkEntry游戏框架入口，管理其他模块（各种Manager)&#xD;&#xA;内部使用链表缓存各个模块&#xD;&#xA;对外提供GetModule方法，内部用CreateModule创建&#xD;&#xA;Update更新各个模块，ShutDown关闭模块">
+    <Position X="4.552" Y="1.885" Height="0.875" Width="4.231" />
+  </Comment>
+  <Comment CommentText="三个封装的链表和字典数据结构">
+    <Position X="10.271" Y="2.417" Height="0.323" Width="2.21" />
+  </Comment>
+  <Comment CommentText="游戏框架序列化器">
+    <Position X="16.594" Y="2.25" Height="0.323" Width="1.354" />
+  </Comment>
+  <Class Name="GameFramework.GameFrameworkEntry">
+    <Position X="5.25" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAgAAAAAAABCAAAQIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkEntry.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameFrameworkModule" />
+      <Property Name="GameFrameworkLinkedList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameFramework.GameFrameworkEventArgs">
+    <Position X="0.5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.GameFrameworkException">
+    <Position X="0.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.GameFrameworkLinkedList&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="3.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="GameFramework.GameFrameworkLinkedList&lt;T&gt;.Enumerator">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkLinkedList.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IgCIABAAABCAAZAQACAANAQAIAAYAAAEAAECAABQIRA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkLinkedList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.GameFrameworkModule">
+    <Position X="0.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.GameFrameworkMultiDictionary&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="10.25" Y="6.25" Width="3.75" />
+    <NestedTypes>
+      <Struct Name="GameFramework.GameFrameworkMultiDictionary&lt;TKey, TValue&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkMultiDictionary.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAABAAABAACAAAJAQAAAQAAAAEIAAAAABQAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkMultiDictionary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.GameFrameworkSerializer&lt;T&gt;">
+    <Position X="16.5" Y="3.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="GameFramework.GameFrameworkSerializer&lt;T&gt;.SerializeCallback">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkSerializer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GameFramework.GameFrameworkSerializer&lt;T&gt;.DeserializeCallback">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkSerializer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="GameFramework.GameFrameworkSerializer&lt;T&gt;.TryGetValueCallback">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkSerializer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAEAAAEAAEAAAAAAgEAAAAIAACBAAAAAABAAgAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GameFramework.GameFrameworkLinkedListRange&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="GameFramework.GameFrameworkLinkedListRange&lt;T&gt;.Enumerator">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkLinkedListRange.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAABRAAAAgAAAQAAAAAAAAEQAAAAAAQAQA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkLinkedListRange.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

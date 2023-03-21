@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="被引用池管理的类都需要实现IReference接口，&#xD;&#xA;ReferencePool内部使用字典缓存每种类型的引用集合数据，&#xD;&#xA;引用集合数据内部使用队列缓存每个引用实例，并记录使用次数&#xD;&#xA;">
+    <Position X="4.462" Y="0.719" Height="0.804" Width="3.925" />
+  </Comment>
+  <Class Name="GameFramework.ReferencePool">
+    <Position X="6.25" Y="3" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.ReferencePool.ReferenceCollection">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\ReferencePool\ReferencePool.ReferenceCollection.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAICAAACAAAAAABAAgAgBAQAAAAAAACAIAAAABQAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\ReferencePool\ReferencePool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GameFramework.ReferencePoolInfo">
+    <Position X="3.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAEAAAEAAEBBIgAIAAEQAEAAAASAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\ReferencePool\ReferencePoolInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="GameFramework.IReference">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\ReferencePool\IReference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

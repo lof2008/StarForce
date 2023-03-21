@@ -90,6 +90,14 @@ namespace GameFramework
             }
         }
 
+        internal ITaskAgent<T> ITaskAgent
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// 任务池轮询。
         /// </summary>

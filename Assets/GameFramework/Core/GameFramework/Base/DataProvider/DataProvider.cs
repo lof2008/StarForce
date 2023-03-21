@@ -57,6 +57,30 @@ namespace GameFramework
             }
         }
 
+        public IDataProviderHelper<T> IDataProviderHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public IDataProviderHelper<T> IDataProviderHelper1
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public IResourceManager IResourceManager
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// 读取数据成功事件。
         /// </summary>

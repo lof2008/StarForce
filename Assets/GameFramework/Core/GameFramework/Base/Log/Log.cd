@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Log类设计的比较简单，只需提供一个helper类即可，方便扩展">
+    <Position X="6.375" Y="2.093" Height="0.542" Width="4.346" />
+  </Comment>
+  <Class Name="GameFramework.GameFrameworkLog">
+    <Position X="6.5" Y="3.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Interface Name="GameFramework.GameFrameworkLog.ILogHelper">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Base\Log\GameFrameworkLog.ILogHelper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAABABAAAAAAAAAAAAAEAkAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\Log\GameFrameworkLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GameFramework.GameFrameworkLogLevel">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAABAAAAAAAAAAAAAAAEAEAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\Log\GameFrameworkLogLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
