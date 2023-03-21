@@ -7,7 +7,10 @@
     <Position X="10.271" Y="2.417" Height="0.323" Width="2.21" />
   </Comment>
   <Comment CommentText="游戏框架序列化器">
-    <Position X="16.594" Y="2.25" Height="0.323" Width="1.354" />
+    <Position X="16.518" Y="2.586" Height="0.323" Width="1.354" />
+  </Comment>
+  <Comment CommentText="各个模块的基类">
+    <Position X="1.146" Y="2.354" Height="0.323" Width="1.304" />
   </Comment>
   <Class Name="GameFramework.GameFrameworkEntry">
     <Position X="5.25" Y="3.25" Width="2.5" />
@@ -21,7 +24,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="GameFramework.GameFrameworkEventArgs">
-    <Position X="0.5" Y="5.5" Width="2.5" />
+    <Position X="0.5" Y="5.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>Assets\GameFramework\Core\GameFramework\Base\GameFrameworkEventArgs.cs</FileName>

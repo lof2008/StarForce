@@ -9,8 +9,11 @@
   <Comment CommentText="TaskPool管理任务和任务代理的添加、移除，&#xD;&#xA;具体任务的执行还是由任务代理来执行&#xD;&#xA;泛型给它提供了多种类型的能力&#xD;&#xA;该游戏共用了3中任务池：&#xD;&#xA;1.TaskPool&lt;DownloadTask&gt;&#xD;&#xA;2.TaskPool&lt;LoadResourceTaskBase&gt;&#xD;&#xA;3.TaskPool&lt;WebRequestTask&gt;">
     <Position X="7.574" Y="1.976" Height="1.384" Width="2.977" />
   </Comment>
-  <Comment CommentText="ITaskAgent接口的实现类是任务执行的地方，&#xD;&#xA;任务的初始化，开始，更新，关闭，重置">
-    <Position X="11.207" Y="2.493" Height="0.94" Width="1.628" />
+  <Comment CommentText="ITaskAgent接口的实现类是任务执行的地方，&#xD;&#xA;任务的初始化，开始，更新，关闭，重置&#xD;&#xA;该游戏具体代理类有：&#xD;&#xA;1.DownloadAgent : ITaskAgent&lt;DownloadTask&gt;&#xD;&#xA;2.LoadResourceAgent : ITaskAgent&lt;LoadResourceTaskBase&gt;&#xD;&#xA;3.WebRequestAgent : ITaskAgent&lt;WebRequestTask&gt;">
+    <Position X="11.186" Y="2.087" Height="1.221" Width="4.013" />
+  </Comment>
+  <Comment CommentText="举例：WebRequestAgent&#xD;&#xA;&#xD;&#xA;内部使用helper类进行真正的请求">
+    <Position X="14.239" Y="6.889" Height="0.752" Width="2.44" />
   </Comment>
   <Class Name="GameFramework.TaskBase">
     <Position X="5.5" Y="3.75" Width="1.5" />
@@ -29,6 +32,44 @@
     <ShowAsAssociation>
       <Property Name="ITaskAgent" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestManager">
+    <Position X="11.5" Y="6.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.WebRequest.WebRequestManager.WebRequestAgent">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestAgent.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.WebRequest.WebRequestManager.WebRequestTask" Collapsed="true">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+          <Compartment Name="Properties" Collapsed="true" />
+          <Compartment Name="Methods" Collapsed="true" />
+        </Compartments>
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestTask.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="GameFramework.WebRequest.WebRequestManager.WebRequestTaskStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestTaskStatus.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIQAISCQCAIAAQAAEBAAAQIEAAAJEAIIAAAAABgAgAg=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Struct Name="GameFramework.TaskInfo">
     <Position X="1.25" Y="3.75" Width="1.5" />
