@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="DataProvider&lt;T&gt;内部使用IResourceManager和IDataProviderHelper&lt;T&gt;来读取数据，&#xD;&#xA;并抛出事件，不同资源类型用不同的方式读取：&#xD;&#xA;1.AssetOnDisk、AssetOnFileSystem、BinaryOnDisk使用IResourceManager来读取，内部引发事件&#xD;&#xA;2.BinaryOnFileSystem使用IDataProviderHelper（IResourceManager处理不了的）来读取（自定义读取），引发事件&#xD;&#xA;&#xD;&#xA;事件参数类实例的创建通过ReferencePool&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
-    <Position X="4.242" Y="0.906" Height="1.326" Width="7.313" />
+    <Position X="3.565" Y="0.792" Height="1.326" Width="7.313" />
   </Comment>
   <Class Name="GameFramework.DataProvider&lt;T&gt;">
     <Position X="7" Y="3.75" Width="3.75" />

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="DownloadManager内部使用TaskPool&lt;DownloadTask&gt;任务池来管理下载任务下载&#xD;&#xA;&#xD;&#xA;添加下载代理辅助器-&gt;注册事件回调-&gt;添加到任务池-&gt;开启任务下载&#xD;&#xA;添加下载-&gt;创建下载任务（设置参数）-&gt;添加到任务池&#xD;&#xA;&#xD;&#xA;下载代理使用文件流进行文件的写入操作，支持断点续传&#xD;&#xA;DownloadCounter计算下载速度">
+    <Position X="9.339" Y="0.688" Height="1.402" Width="5.305" />
+  </Comment>
+  <Comment CommentText="下载代理内部使用hepler来辅助下载资源">
+    <Position X="7.289" Y="12.292" Height="0.361" Width="2.724" />
+  </Comment>
+  <Class Name="GameFramework.Download.Constant">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\Constant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadAgentHelperCompleteEventArgs" Collapsed="true">
+    <Position X="3.25" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadAgentHelperCompleteEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadAgentHelperErrorEventArgs" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAIAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadAgentHelperErrorEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadAgentHelperUpdateBytesEventArgs" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAEAAABAAAAAAEAAAAAAAABAgAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadAgentHelperUpdateBytesEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadAgentHelperUpdateLengthEventArgs" Collapsed="true">
+    <Position X="3.25" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAgBAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadAgentHelperUpdateLengthEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadFailureEventArgs" Collapsed="true">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAgAAAAAAAAAACAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadManager">
+    <Position X="10.5" Y="2.75" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.Download.DownloadManager.DownloadAgent">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Download\DownloadManager.DownloadAgent.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.Download.DownloadManager.DownloadCounter">
+        <NestedTypes>
+          <Class Name="GameFramework.Download.DownloadManager.DownloadCounter.DownloadCounterNode" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Download\DownloadManager.DownloadCounter.DownloadCounterNode.cs</NewMemberFileName>
+            </TypeIdentifier>
+            <Lollipop Position="0.2" />
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Download\DownloadManager.DownloadCounter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="GameFramework.Download.DownloadManager.DownloadTask">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Download\DownloadManager.DownloadTask.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="GameFramework.Download.DownloadManager.DownloadTaskStatus">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Download\DownloadManager.DownloadTaskStatus.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAwoAigQCIAAAQIEEBEQAUAAkAGIACICCQCAAAAAwQE=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.Download.DownloadStartEventArgs" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAgAAAAAABAAACAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadStartEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadSuccessEventArgs" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAgAAAAAABAAACAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadSuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Download.DownloadUpdateEventArgs" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAgAAAAAABAAACAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\DownloadUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.Download.IDownloadAgentHelper">
+    <Position X="14.75" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAABAQAAAAAIAAAAAQAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\IDownloadAgentHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Download.IDownloadManager">
+    <Position X="7.25" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAggQCAAAAAAAEBEAAAAAkAEIAAICCQCAAAAAwAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Download\IDownloadManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

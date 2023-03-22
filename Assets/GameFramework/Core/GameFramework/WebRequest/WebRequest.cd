@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="WebRequestManager和DownloadManager基本相同的设计&#xD;&#xA;WebRequestManager使用TaskPool&lt;WebRequestTask&gt;任务池，把请求封装成任务，&#xD;&#xA;由任务池来管理，任务池又通过代理来进行实际的请求，然后触发事件&#xD;&#xA;&#xD;&#xA;Manager主要工作是：添加请求代理辅助器，添加请求，查询请求，删除请求，更新请求&#xD;&#xA;还有为上层触发事件">
+    <Position X="5.207" Y="1.391" Height="1.208" Width="5.457" />
+  </Comment>
+  <Class Name="GameFramework.WebRequest.Constant">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\Constant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestAgentHelperCompleteEventArgs" Collapsed="true">
+    <Position X="0.75" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAEAAAAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestAgentHelperCompleteEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestAgentHelperErrorEventArgs" Collapsed="true">
+    <Position X="0.75" Y="6" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestAgentHelperErrorEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestFailureEventArgs" Collapsed="true">
+    <Position X="0.75" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestManager">
+    <Position X="8.5" Y="3.75" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.WebRequest.WebRequestManager.WebRequestAgent">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestAgent.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.WebRequest.WebRequestManager.WebRequestTask">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestTask.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="GameFramework.WebRequest.WebRequestManager.WebRequestTaskStatus">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.WebRequestTaskStatus.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIQAISCQCAIAAQAAEBAAAQIEAAAJEAIIAAAAABgAgAg=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestStartEventArgs" Collapsed="true">
+    <Position X="0.75" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestStartEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.WebRequest.WebRequestSuccessEventArgs" Collapsed="true">
+    <Position X="0.75" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAEAAAAAEAAAAAAEIAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\WebRequestSuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.WebRequest.IWebRequestAgentHelper">
+    <Position X="13" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAQAAAAACgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\IWebRequestAgentHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.WebRequest.IWebRequestManager">
+    <Position X="5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCQAAIAAAAAEBAAAAAAAAAJEAIIAAAAABAAgAg=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\WebRequest\IWebRequestManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

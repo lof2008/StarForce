@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="DataNodeManager这个类比较简单，之所以简单时没有涉及到其他模块，比较纯粹，比较类似链表">
+    <Position X="7.047" Y="2.283" Height="0.524" Width="3.312" />
+  </Comment>
+  <Comment CommentText="每个节点有一个父节点和一组孩子节点">
+    <Position X="3.846" Y="2.56" Height="0.324" Width="2.524" />
+  </Comment>
+  <Class Name="GameFramework.DataNode.DataNodeManager">
+    <Position X="7.25" Y="3.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.DataNode.DataNodeManager.DataNode">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\DataNode\DataNodeManager.DataNode.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACQAAAABEAAAACEAAQAIAQAIEAAAAAAAAAARAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataNode\DataNodeManager.DataNode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GameFramework.DataNode.IDataNode">
+    <Position X="4" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAABEAAJAIAEAAIAQAQAAAIAAAAAAAQAQABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataNode\IDataNode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.DataNode.IDataNodeManager">
+    <Position X="0.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABEAAAACEAAQAAAAAAEAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataNode\IDataNodeManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

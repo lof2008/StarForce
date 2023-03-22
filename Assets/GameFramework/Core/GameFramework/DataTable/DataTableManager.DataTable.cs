@@ -92,6 +92,22 @@ namespace GameFramework.DataTable
                 }
             }
 
+            public IDataRow IDataRow
+            {
+                get => default;
+                set
+                {
+                }
+            }
+
+            public IDataRow IDataRow1
+            {
+                get => default;
+                set
+                {
+                }
+            }
+
             /// <summary>
             /// 检查是否存在数据表行。
             /// </summary>

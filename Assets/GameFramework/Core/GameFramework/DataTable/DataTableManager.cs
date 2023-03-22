@@ -481,7 +481,7 @@ namespace GameFramework.DataTable
         {
             return m_DataTables.ContainsKey(typeNamePair);
         }
-
+        
         private DataTableBase InternalGetDataTable(TypeNamePair typeNamePair)
         {
             DataTableBase dataTable = null;

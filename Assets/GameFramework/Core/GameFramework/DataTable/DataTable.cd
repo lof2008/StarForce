@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="DataTableManager和ConfigManager比较类似，但设计上又有点不同&#xD;&#xA;ConfigManager使用DataProvider，DataProvider内部使用IResourceManager和IDataProviderHelper&#xD;&#xA;DataTableManager是直接使用IResourceManager和IDataProviderHelper，是因为DataTableBase使用DataProvider,&#xD;&#xA;DataTableManager内部缓存DataTableBase,通过DataTableManager把IResourceManager和IDataProviderHelper透传给DataTableBase内部的DataProvider，包括CachedBytesSize，也是透传给DataProvider&#xD;&#xA;&#xD;&#xA;可以这么理解：XXXManager内部管理的是XXX相关数据，提供XXX相关的操作，XXX需要什么都需要XXXManager来提供&#xD;&#xA;常用的操作：添加（创建）、获取、查询、删除">
+    <Position X="0.5" Y="0.802" Height="1.544" Width="7.292" />
+  </Comment>
+  <Comment CommentText="DataTable&lt;T&gt;数据表，泛型T是数据表行的类型，负责解析每一行的数据&#xD;&#xA;DataTable也可以看着是个管理器，管理的是数据表行数据，操作是对数据表行的操作：&#xD;&#xA;添加、删除、获取、查询，并添加迭代器功能，方便遍历数据">
+    <Position X="7.115" Y="7.75" Height="0.753" Width="5.261" />
+  </Comment>
+  <Class Name="GameFramework.DataTable.DataTableBase">
+    <Position X="7.25" Y="9.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EACDIAAAAAABAIEAAUQAAQQAAAAAAgAQASAIAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataTable\DataTableBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.DataTable.DataTableManager">
+    <Position X="3.75" Y="3" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.DataTable.DataTableManager.DataTable&lt;T&gt;">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\DataTable\DataTableManager.DataTable.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BA0AEACAAAAhAAAABAQCAQQAIAAEAAAQgAAAAGgCAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataTable\DataTableManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GameFramework.DataTable.IDataRow">
+    <Position X="10.5" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataTable\IDataRow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.DataTable.IDataTable&lt;T&gt;">
+    <Position X="1" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAAAACAgIAACEAAAAQAAgAAAAAAASAJAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataTable\IDataTable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.DataTable.IDataTableHelper">
+    <Position X="16.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataTable\IDataTableHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.DataTable.IDataTableManager">
+    <Position X="0.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACAAAAhAAAABAQAAAQAIAAEAAAQAAAAAGAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\DataTable\IDataTableManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

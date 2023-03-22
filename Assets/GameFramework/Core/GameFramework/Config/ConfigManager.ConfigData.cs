@@ -11,6 +11,14 @@ namespace GameFramework.Config
 {
     internal sealed partial class ConfigManager : GameFrameworkModule, IConfigManager
     {
+        public IConfigHelper IConfigHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         [StructLayout(LayoutKind.Auto)]
         private struct ConfigData
         {

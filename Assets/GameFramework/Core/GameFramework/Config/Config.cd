@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="ConfigManager内部使用DataProvider来读取、解析配置，&#xD;&#xA;内部还使用IConfigHelper，为了扩展，目前没有用处&#xD;&#xA;内部使用字典缓存配置数据&#xD;&#xA;&#xD;&#xA;DataProvider读取配置时内部又使用IResourceManager来加载配置，之后再进行解析配置，然后添加配置到内部字典中&#xD;&#xA;&#xD;&#xA;平时写可能就一个文件处理了读取解析和添加，这里进一步封装&#xD;&#xA;">
+    <Position X="3.726" Y="1.55" Height="1.483" Width="4.031" />
+  </Comment>
+  <Class Name="GameFramework.Config.ConfigManager">
+    <Position X="4.25" Y="3.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="GameFramework.Config.ConfigManager.ConfigData">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+          <Compartment Name="Methods" Collapsed="true" />
+        </Compartments>
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Config\ConfigManager.ConfigData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IISCEACACDABAIEAASQAhQQAIAAAAgAQICAAAADAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Config\ConfigManager.ConfigData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IConfigHelper" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.3" />
+  </Class>
+  <Interface Name="GameFramework.Config.IConfigHelper">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Config\IConfigHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Config.IConfigManager">
+    <Position X="1" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAEACACDAAAIAAAAQABAQAIAAAAAAQIAAAAADAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Config\IConfigManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.IDataProvider&lt;T&gt;" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAABAAEAAQAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Base\DataProvider\IDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
