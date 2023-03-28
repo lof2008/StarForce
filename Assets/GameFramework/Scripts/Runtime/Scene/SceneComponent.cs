@@ -53,7 +53,7 @@ namespace UnityGameFramework.Runtime
         protected override void Awake()
         {
             base.Awake();
-
+          
             m_SceneManager = GameFrameworkEntry.GetModule<ISceneManager>();
             if (m_SceneManager == null)
             {

@@ -57,6 +57,22 @@ namespace GameFramework.Sound
             }
         }
 
+        public ISoundHelper ISoundHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public IResourceManager IResourceManager
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// 播放声音成功事件。
         /// </summary>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="SoundManager是一个典型的设计例子：&#xD;&#xA;主要职责：&#xD;&#xA;1.管理声音组（添加、获取、查询）&#xD;&#xA;2.负责声音的播放、暂停、停止：通过声音组来实现，声音组通过声音代理，声音代理又通过声音代理辅助器类来实现真正的声音的播放停止等操作&#xD;&#xA;3.负责透传声音辅助器给声音组，声音组再透传给声音代理（释放声音资源，实现类内部通过ResourceManager来释放资源）&#xD;&#xA;4.负责声音资源的加载（通过ResourceManager），加载成功进行播放&#xD;&#xA;">
+    <Position X="6.765" Y="0.909" Height="1.645" Width="5.185" />
+  </Comment>
+  <Comment CommentText="声音组通过声音代理来进行声音的播放等操作，&#xD;&#xA;声音组辅助器类目前没有什么用，没有任何属性和方法，为了扩展&#xD;&#xA;&#xD;&#xA;声音组需要把声音代理辅助器类传递给声音代理，因为真正干活的是&#xD;&#xA;声音代理辅助器类">
+    <Position X="11.779" Y="25.093" Height="1.046" Width="4.153" />
+  </Comment>
+  <Comment CommentText="声音代理辅助器类才是真正实现声音播放、暂停、停止等操作的类">
+    <Position X="15.578" Y="15.391" Height="0.541" Width="2.457" />
+  </Comment>
+  <Comment CommentText="声音组辅助器类目前没什么用，为了扩展">
+    <Position X="17.246" Y="7.438" Height="0.376" Width="2.622" />
+  </Comment>
+  <Class Name="GameFramework.Sound.Constant">
+    <Position X="17.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAQAAgAAAiAAAEARAAAAAAAAAAACACAAACEAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\Constant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Sound.PlaySoundDependencyAssetEventArgs" Collapsed="true">
+    <Position X="0.75" Y="8" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAABAAAAACAABAAAAAAAEAAAQAAAgBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\PlaySoundDependencyAssetEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Sound.PlaySoundFailureEventArgs" Collapsed="true">
+    <Position X="0.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAAAACAAAAAAAgAAEAAAQAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\PlaySoundFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Sound.PlaySoundParams" Collapsed="true">
+    <Position X="12.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAFIAAAAAAAEAIAAAgogAIABIUAACADBAABACQk=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\PlaySoundParams.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.Sound.PlaySoundSuccessEventArgs" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAACAAAAAAAAQAAAAAAAAEAAAQAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\PlaySoundSuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Sound.PlaySoundUpdateEventArgs" Collapsed="true">
+    <Position X="0.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAQAAAADIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\PlaySoundUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Sound.ResetSoundAgentEventArgs" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ResetSoundAgentEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Sound.SoundManager">
+    <Position X="8" Y="3.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.Sound.SoundManager.PlaySoundInfo">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Sound\SoundManager.PlaySoundInfo.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.Sound.SoundManager.SoundAgent">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Sound\SoundManager.SoundAgent.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.Sound.SoundManager.SoundGroup">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Sound\SoundManager.SoundGroup.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAwABAHMUQIAACAgAgBmFQiAIAABABEQAAAAUAiAAQI=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\SoundManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ISoundHelper" />
+      <Property Name="IResourceManager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GameFramework.Sound.ISoundAgent">
+    <Position X="12" Y="16.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIBgAAEIAIAABAAECIAAAAhAAAQAAAAAqAJAAAgAAQk=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ISoundAgent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Sound.ISoundAgentHelper">
+    <Position X="15.75" Y="16.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAEIAAAABAAEGAAAAAhAAAQAAAAAoAJAAAwAAQk=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ISoundAgentHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Sound.ISoundGroup">
+    <Position X="13" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AABAEAAAAAAAAAAACAAAAAQAABAAAAAAAAIAQAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ISoundGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Sound.ISoundGroupHelper">
+    <Position X="17.25" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ISoundGroupHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Sound.ISoundHelper" Collapsed="true">
+    <Position X="13" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ISoundHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Sound.ISoundManager">
+    <Position X="4.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAgAAAHEEAIAAAAgAAAGAAiAIAAAABAQAAAAQAiAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\ISoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Resource.IResourceManager" Collapsed="true">
+    <Position X="13" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AhMgJkc9CAmAOAUgGBAIiQhACBAHVF2AEJIEo2ARIgg=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Resource\IResourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GameFramework.Sound.PlaySoundErrorCode">
+    <Position X="15" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAJAAAAABAAAAgABA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Sound\PlaySoundErrorCode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

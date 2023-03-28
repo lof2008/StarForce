@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="SettingManager比较简单&#xD;&#xA;ISettingHelper默认实现了两个：&#xD;&#xA;1.PlayerPrefsSettingHelper：简单&#xD;&#xA;2.DefaultSettingHelper：自定义序列化和反序列化">
+    <Position X="3.958" Y="2.583" Height="0.833" Width="3.106" />
+  </Comment>
+  <Class Name="GameFramework.Setting.SettingManager">
+    <Position X="4.25" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AASggJgAECAgIgAIAkAABQQAAAAAAAAEAAAAAADAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Setting\SettingManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GameFramework.Setting.ISettingHelper">
+    <Position X="7.5" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACggIgAACAgIgAIAkAABAQAAAAAAAAEAAAAAADAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Setting\ISettingHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Setting.ISettingManager">
+    <Position X="0.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACggIgAECAgIgAIAkAABAQAAAAAAAAEAAAAAADAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Setting\ISettingManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

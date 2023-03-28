@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="SceneManager比较简单，内部使用到ResourceManager（涉及资源加载都会使用）&#xD;&#xA;主要就是加载、卸载场景、查询、触发事件">
+    <Position X="8.156" Y="1.979" Height="0.615" Width="4.992" />
+  </Comment>
+  <Class Name="GameFramework.Scene.LoadSceneDependencyAssetEventArgs" Collapsed="true">
+    <Position X="1" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAABAAAAAAAEAAAAAAAoBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\LoadSceneDependencyAssetEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Scene.LoadSceneFailureEventArgs" Collapsed="true">
+    <Position X="1" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\LoadSceneFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Scene.LoadSceneSuccessEventArgs" Collapsed="true">
+    <Position X="1" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAAAAAIBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\LoadSceneSuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Scene.LoadSceneUpdateEventArgs" Collapsed="true">
+    <Position X="1" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIDIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\LoadSceneUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Scene.SceneManager" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AQYgAAECAMgDARgECABjCQggBAQkGAAQBAAAEAIAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\SceneManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameFramework.Scene.UnloadSceneFailureEventArgs" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\UnloadSceneFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Scene.UnloadSceneSuccessEventArgs" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIBIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\UnloadSceneSuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.Scene.ISceneManager">
+    <Position X="8" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAAAEgCABAAAABACAAgBAQkEAAQAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Scene\ISceneManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

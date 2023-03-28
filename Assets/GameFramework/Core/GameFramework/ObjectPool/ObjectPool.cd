@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="ObjectPoolManager管理的是对象池(可能存在多个对象池)，对象池(ObjectPool)管理的是对象，套娃！&#xD;&#xA;ObjectPoolManager主要操作：创建对象池、获取对象池、查询对象池、销毁对象池、释放对象池内部对象、更新对象池&#xD;&#xA;这里设计的一个对象池只能放一种类型">
+    <Position X="4.958" Y="1.313" Height="0.698" Width="7.388" />
+  </Comment>
+  <Comment CommentText="ObjectPool必须先进行注册，然后才可以生成">
+    <Position X="4.034" Y="14.104" Height="0.523" Width="2.867" />
+  </Comment>
+  <Class Name="GameFramework.ObjectPool.ObjectBase" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAgAAAAgAQAAEQgEAAAAACQCAAAAAQAAAAAABBBACAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ObjectBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.ObjectPool.ObjectPoolBase">
+    <Position X="4.5" Y="15" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAEAAAQAIAEAAAAEQQCAAAAAAAAAIAAABYAAAE=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ObjectPoolBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.ObjectPool.ObjectPoolManager" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.75" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.ObjectPool.ObjectPoolManager.ObjectPool&lt;T&gt;">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ObjectPoolManager.ObjectPool.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.ObjectPool.ObjectPoolManager.Object&lt;T&gt;">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ObjectPoolManager.Object.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABQAAAAACAAAkEgEEAAQJQwAAASAAAAAQAAACBAAUCE=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ObjectPoolManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="GameFramework.ObjectPool.ObjectInfo">
+    <Position X="3.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAhCAAAgAAAAEAgEAAAAAAQCAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ObjectInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="GameFramework.ObjectPool.IObjectPool&lt;T&gt;">
+    <Position X="11.25" Y="15" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAARAIAEAAEAEAQCAAAJAAAAAIAABBUAAAE=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\IObjectPool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.ObjectPool.IObjectPoolManager">
+    <Position X="12" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAgAAAAAAAAAQAAASAAAAAQAAACBAAQAE=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\IObjectPoolManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="GameFramework.ObjectPool.ReleaseObjectFilterCallback&lt;T&gt;">
+    <Position X="0.5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\ObjectPool\ReleaseObjectFilterCallback.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

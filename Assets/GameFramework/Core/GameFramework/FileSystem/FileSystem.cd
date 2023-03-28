@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="FileSystemManager管理多个文件系统，常见操作：&#xD;&#xA;创建、销毁、获取、查询、加载文件系统&#xD;&#xA;文件系统还需要文件系统辅助器（FileSystem Helper）">
+    <Position X="2.833" Y="1.542" Height="0.708" Width="3.294" />
+  </Comment>
+  <Comment CommentText="FileSystem是">
+    <Position X="7.25" Y="1.521" Height="0.708" Width="6.544" />
+  </Comment>
+  <Class Name="GameFramework.FileSystem.CommonFileSystemStream">
+    <Position X="12.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAQAAkCAAAAABgAAAAAEAgAAAAAAGIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\CommonFileSystemStream.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.FileSystem.FileSystem" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="4" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="GameFramework.FileSystem.FileSystem.BlockData">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystem.BlockData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="GameFramework.FileSystem.FileSystem.HeaderData">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystem.HeaderData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="GameFramework.FileSystem.FileSystem.StringData">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystem.StringData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CCAWiAAAGgAAQEEAAA2YIQABAQDgIERBUAkAKAQAQgI=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystem.BlockData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameFramework.FileSystem.FileSystemManager" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>hAQBACgAAQAgAAAEAAAAAQQAAACAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystemManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameFramework.FileSystem.FileSystemStream" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAQAAgCAAAAABgAAAAAEAgAAAAAAGIAAI=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystemStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GameFramework.FileSystem.FileInfo">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAgAAARAAAgAIAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="GameFramework.FileSystem.IFileSystem" Collapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAWAAAAAAAAQEAAAAiAAAABAAAAAABAAAEACAAAAgA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\IFileSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.FileSystem.IFileSystemHelper">
+    <Position X="9.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\IFileSystemHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.FileSystem.IFileSystemManager" Collapsed="true">
+    <Position X="3.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>hAAAACgAAQAgAAAAAAAAAAQAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\IFileSystemManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GameFramework.FileSystem.FileSystemAccess">
+    <Position X="1" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAgAAAAAgAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\FileSystem\FileSystemAccess.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

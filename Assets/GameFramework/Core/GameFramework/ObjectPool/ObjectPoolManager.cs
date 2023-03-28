@@ -359,7 +359,7 @@ namespace GameFramework.ObjectPool
         /// <param name="sort">是否根据对象池的优先级排序。</param>
         /// <param name="results">所有对象池。</param>
         public void GetAllObjectPools(bool sort, List<ObjectPoolBase> results)
-        {
+        {            
             if (results == null)
             {
                 throw new GameFrameworkException("Results is invalid.");
@@ -369,13 +369,15 @@ namespace GameFramework.ObjectPool
             foreach (KeyValuePair<TypeNamePair, ObjectPoolBase> objectPool in m_ObjectPools)
             {
                 results.Add(objectPool.Value);
-            }
+            }            
 
             if (sort)
             {
                 results.Sort(m_ObjectPoolComparer);
             }
         }
+
+        #region CreateSingleSpawnObjectPool
 
         /// <summary>
         /// 创建允许单次获取的对象池。
@@ -745,6 +747,10 @@ namespace GameFramework.ObjectPool
             return InternalCreateObjectPool(objectType, name, false, autoReleaseInterval, capacity, expireTime, priority);
         }
 
+        #endregion
+
+        #region CreateMultiSpawnObjectPool
+
         /// <summary>
         /// 创建允许多次获取的对象池。
         /// </summary>
@@ -1112,6 +1118,7 @@ namespace GameFramework.ObjectPool
         {
             return InternalCreateObjectPool(objectType, name, true, autoReleaseInterval, capacity, expireTime, priority);
         }
+        #endregion
 
         /// <summary>
         /// 销毁对象池。

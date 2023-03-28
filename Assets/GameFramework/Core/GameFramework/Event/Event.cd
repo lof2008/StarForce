@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="EventManager完全是对EventPool&lt;GameEventArgs&gt;的封装&#xD;&#xA;主要用与游戏相关的事件">
+    <Position X="4.156" Y="1.104" Height="0.573" Width="3.794" />
+  </Comment>
+  <Class Name="GameFramework.Event.EventManager">
+    <Position X="7" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAgAAAAAAACEAAAEAQSAAAAmAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Event\EventManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.Event.GameEventArgs">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Event\GameEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.Event.IEventManager">
+    <Position X="4.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAACAAAAEAASAAAAmAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Event\IEventManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

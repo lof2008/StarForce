@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="WebRequestManager和DownloadManager基本相同的设计&#xD;&#xA;WebRequestManager使用TaskPool&lt;WebRequestTask&gt;任务池，把请求封装成任务，&#xD;&#xA;由任务池来管理，任务池又通过代理来进行实际的请求，然后触发事件&#xD;&#xA;&#xD;&#xA;Manager主要工作是：添加请求代理辅助器，添加请求，查询请求，删除请求，更新请求&#xD;&#xA;还有为上层触发事件">
-    <Position X="5.207" Y="1.391" Height="1.208" Width="5.457" />
+  <Comment CommentText="WebRequestManager和DownloadManager基本相同的设计，而且更简单&#xD;&#xA;WebRequestManager使用TaskPool&lt;WebRequestTask&gt;任务池，把请求封装成任务，&#xD;&#xA;由任务池来管理，任务池又通过代理来进行实际的请求，然后触发事件&#xD;&#xA;&#xD;&#xA;WebRequestManager主要工作是：添加请求代理辅助器，添加请求，查询请求，删除请求，更新请求，还有为上层触发事件&#xD;&#xA;&#xD;&#xA;WebRequestAgent内部使用IWebRequestAgentHelper的实现类来进行Web请求。&#xD;&#xA;UnityGameFramework默认添加WWWWebRequestAgentHelper和UnityWebRequestAgentHelper实现&#xD;&#xA;&#xD;&#xA;平时写些小项目，一个类，内部使用UnityWebRequest请求就行了，这套框架只是实现更多的功能而已，方便扩展">
+    <Position X="4.822" Y="0.61" Height="2.687" Width="5.186" />
   </Comment>
   <Class Name="GameFramework.WebRequest.Constant">
     <Position X="0.75" Y="3.5" Width="1.5" />

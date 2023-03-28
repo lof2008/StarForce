@@ -60,6 +60,14 @@ namespace GameFramework.Scene
             }
         }
 
+        public IResourceManager IResourceManager
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         /// <summary>
         /// 加载场景成功事件。
         /// </summary>
