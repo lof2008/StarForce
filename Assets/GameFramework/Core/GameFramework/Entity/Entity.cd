@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="EntityManager和UIManager设计上非常相似&#xD;&#xA;EntityManager把对象池封装到了EntityGroup里&#xD;&#xA;UIManager把对象封装到了UIManager里&#xD;&#xA;&#xD;&#xA;EntityManager里还保存所有EntityInfo(Entity的封装)&#xD;&#xA;&#xD;&#xA;EntityGroup里保存Entity&#xD;&#xA;UIGroup里保存UIFormInfo(对UIForm的封装)&#xD;&#xA;">
+    <Position X="5.229" Y="0.5" Height="1.583" Width="3.888" />
+  </Comment>
+  <Class Name="GameFramework.Entity.EntityManager" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.25" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GameFramework.Entity.EntityManager.EntityGroup">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Entity\EntityManager.EntityGroup.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.Entity.EntityManager.EntityInfo">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Entity\EntityManager.EntityInfo.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="GameFramework.Entity.EntityManager.EntityInstanceObject">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Entity\EntityManager.EntityInstanceObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="GameFramework.Entity.EntityManager.EntityStatus">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Entity\EntityManager.EntityStatus.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="GameFramework.Entity.EntityManager.ShowEntityInfo">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\GameFramework\Core\GameFramework\Entity\EntityManager.ShowEntityInfo.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>KQQBAhgIQ4iIAYCAAmDTkwBBkAChAwAQACBAEAEZAyU=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\EntityManager.EntityGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameFramework.Entity.HideEntityCompleteEventArgs" Collapsed="true">
+    <Position X="1.25" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAIAAAAAAAAAAAAAAAAACEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\HideEntityCompleteEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Entity.ShowEntityDependencyAssetEventArgs" Collapsed="true">
+    <Position X="1.25" Y="6.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIABAAAAAAAABAAAAAACEAAAAAAAgBMAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\ShowEntityDependencyAssetEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Entity.ShowEntityFailureEventArgs" Collapsed="true">
+    <Position X="1.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAIAAAAAAAAAAAAAAAAACEAAAAAAAABMAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\ShowEntityFailureEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Entity.ShowEntitySuccessEventArgs" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\ShowEntitySuccessEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework.Entity.ShowEntityUpdateEventArgs" Collapsed="true">
+    <Position X="1.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAACEAAAAAAAADMAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\ShowEntityUpdateEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.Entity.IEntity">
+    <Position X="3" Y="27" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAEAgAAAAAAABAAAEABAAACAYAAAAAAAEEAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\IEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Entity.IEntityGroup">
+    <Position X="9.75" Y="16.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAgAAAAAIQAAAACBAAQBAAAAACgAAEAAAAAAAIE=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\IEntityGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Entity.IEntityGroupHelper">
+    <Position X="12.75" Y="16.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\IEntityGroupHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Entity.IEntityHelper">
+    <Position X="1" Y="27" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAA=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\IEntityHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameFramework.Entity.IEntityManager" Collapsed="true">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABAhgAAYgIAQAAAECRkAABgACgAwAQACBAEAEIAgU=</HashCode>
+      <FileName>Assets\GameFramework\Core\GameFramework\Entity\IEntityManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

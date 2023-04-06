@@ -1,10 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="UIManager管理UIGroup,&#xD;&#xA;资源加载使用ResourceManager&#xD;&#xA;使用ObjectPoolManager创建UI专属的对象池IObjectPool&lt;UIFormInstanceObject&gt;&#xD;&#xA;使用IUIFormHelper来创建、释放、实例化UIForm">
-    <Position X="4.323" Y="0.781" Height="2.01" Width="6.648" />
+    <Position X="4.531" Y="1.698" Height="0.916" Width="5.398" />
+  </Comment>
+  <Comment CommentText="OpenUIForm流程：&#xD;&#xA;1.获取UIGroup&#xD;&#xA;2.去对象池里获取UIFormInstanceObject，没有再使用ResourceManager加载，加载成功，实例化资源，创建UIForm，调用UIForm的相应方法（init、open)，最后打开成功或失败的事件">
+    <Position X="1.625" Y="12.24" Height="1.229" Width="3.387" />
+  </Comment>
+  <Comment CommentText="CloseUIForm流程：&#xD;&#xA;1.获取UIGroup&#xD;&#xA;2.从UIGroup中移除&#xD;&#xA;3.调用UIForm的OnClose，UIGroup刷新&#xD;&#xA;4.触发UIForm关闭完成事件&#xD;&#xA;5.UIForm入队，在下一帧调用所有要回收UIForm的OnRecycle&#xD;&#xA;6.对象池回收该UIFrom实例">
+    <Position X="1.573" Y="9.313" Height="1.562" Width="3.387" />
+  </Comment>
+  <Comment CommentText="RefocusUIForm流程：&#xD;&#xA;1.获取UIGroup&#xD;&#xA;2.UIGroup调用RefocusUIForm&#xD;&#xA;3.UIGroup刷新&#xD;&#xA;4.UIForm调用OnRefocus">
+    <Position X="9.375" Y="12.605" Height="1" Width="2.158" />
   </Comment>
   <Class Name="GameFramework.UI.CloseUIFormCompleteEventArgs" Collapsed="true">
-    <Position X="1" Y="7.25" Width="2.5" />
+    <Position X="1.5" Y="8.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AIAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAJIAAA=</HashCode>
       <FileName>Assets\GameFramework\Core\GameFramework\UI\CloseUIFormCompleteEventArgs.cs</FileName>
